@@ -20,7 +20,7 @@ In Visual Studio 2022:
      <img width="961" height="1045" alt="image" src="https://github.com/user-attachments/assets/5760f7e9-f6a2-4797-9684-cb3c99c8e8fc" />
   5. Click 'File', then in dropdown, select 'Open' -> Project/Solution
      <img width="456" height="368" alt="image" src="https://github.com/user-attachments/assets/2066bf7f-ab5b-4702-8c90-192799f238c4" />
-  6. Select the Repository (if ZIP, usually C:\Users\<YourName>\Downloads\, if Cloned, it should be wherever you typed the command from (example: If you opened Git Bash, without cd "path", then it will be in same spot.))
+  6. Select the Repository (if ZIP, usually C:\Users\<Your-Name>\Downloads\, if Cloned, it should be wherever you typed the command from (example: If you opened Git Bash, without cd "path", then it will be in same spot.))
   7. Find 'run.bat'
   8. Add it to your PATH:
      a. Windows + S, then search 'env'
