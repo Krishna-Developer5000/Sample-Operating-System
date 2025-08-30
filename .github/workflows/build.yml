@@ -1,0 +1,20 @@
+name: 🛠 Build & Test OS
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: sudo apt update && sudo apt install -y nasm gcc binutils qemu-system-x86
+
+      - name: Build Kernel
+        run: |
+          nasm boot/boot.asm -f bin -o bootloader.bin
+          gcc -ffreestanding -m32 -c kernel/kernel.c -o kernel.o
+          ld -T linker.ld -o kernel.bin -m elf_i386 kernel.o
+          cat bootloader.bin kernel.bin > os-image.bin

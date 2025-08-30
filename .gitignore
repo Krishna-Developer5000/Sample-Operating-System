@@ -1,0 +1,14 @@
+# OS junk
+Thumbs.db
+.DS_Store
+# IDE-based
+.vscode/
+.idea/
+# Build outputs
+*.bin
+*.o
+*.img
+os-image.bin
+# Other ignore files
+.easignore
+.rcignore

@@ -1,0 +1,36 @@
+name: 💥 CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-kkos:
+    name: 🔧 Build Sample Operating System
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🛠 Install tools (NASM, GCC, QEMU)
+        run: |
+          sudo apt update
+          sudo apt install -y nasm gcc binutils qemu-system-x86
+
+      - name: 🧱 Build Bootloader
+        run: nasm boot/boot.asm -f bin -o bootloader.bin
+
+      - name: 🧠 Build Kernel
+        run: gcc -ffreestanding -m32 -c kernel/kernel.c -o kernel.o
+
+      - name: 🔗 Link Kernel
+        run: ld -T linker.ld -o kernel.bin -m elf_i386 kernel.o
+
+      - name: 🧬 Create OS Image
+        run: cat bootloader.bin kernel.bin > os-image.bin
+
+      - name: ✅ Verify Build
+        run: ls -lh os-image.bin
