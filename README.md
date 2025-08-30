@@ -62,4 +62,4 @@ If you did not install QEMU, follow these steps:
 4. Finish the installation wizard.
 5. Go to Step 2 to run the OS.
 
-WARNING: Do not edit kernel.c or boot.asm as it could corrupt your system. If you want to edit, consider using somebody you know who knows NASM and C, then change it.
+WARNING: Do not edit kernel.c or boot.asm as it could corrupt your system. If you want to edit, consider using somebody you know who knows NASM and C, then change it. Otherwise, Understand the code.
