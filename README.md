@@ -63,3 +63,28 @@ If you did not install QEMU, follow these steps:
 5. Go to Step 2 to run the OS.
 
 WARNING: Do not edit kernel.c or boot.asm as it could corrupt your system. If you want to edit, consider using somebody you know who knows NASM and C, then change it. Otherwise, Understand the code.
+
+This is optional. But if you want to have Git Installed, follow these steps:
+1. In your search engine, type 'Git Download' (or go to this direct link: https://git-scm.com/downloads)
+2. Click 'Windows' above 'Downloads'
+   <img width="921" height="695" alt="image" src="https://github.com/user-attachments/assets/91f320e3-e814-43d8-9dae-d913db37e674" />
+3. Download the standalone installer (do not select x64 if you are in ARM64, do not select ARM64 if you are on x64.)
+4. After download, open the Git installer (ususally named as 'Git-2.51.0-64-bit.exe')
+5. Finish the Setup Wizard
+
+If you want to use winget (only if you have it installed):
+1. Open Powershell
+2. Type this command:
+
+   `winget install --id Git.Git -e --source winget`
+3. Wait for it to finish installing.
+4. See if you have all of these installed:
+   a. Git Bash
+   b. Git GUI
+   c. Git CMD
+   If you dont have all of these, installation might be corrupted. Consider reinstalling or use the Standalone Installer.
+5. In Command prompt, type this:
+
+   `git --version`
+6. You should see soemthing like: `git version <version<<os><version>`
+7. If it shows, you are ready to clone the repo via the Downloading the Repo step.
