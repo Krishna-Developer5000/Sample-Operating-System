@@ -49,7 +49,7 @@ If you did not install Visual Studio 2022, you can follow this steps:
 4. You  might see 'VisualStudioSetup.exe', Click the arrow button which has a square combined
 5. Wait for the Visual Studio installer to do its thing.
 6. Now, click 'Desktop developement with C++' workload.
-7. It will give a UAC prompt, just click 'Yes', not such a big deal unless its something bad.
+7. It will give a UAC (User Account Control) prompt since itts touching 'Program Files', just click 'Yes'.
 8. It will take some time to install depending on your internet connection.
 9. Restart VS
 10. Go to Step 2.
