@@ -86,5 +86,6 @@ If you want to use winget (only if you have it installed):
 5. In Command prompt, type this:
 
    `git --version`
-6. You should see soemthing like: `git version <version<<os><version>`
+6. You should see something like: `git version <version><os><version>`
+   a. Simple example: git version 2.123.windows.456
 7. If it shows, you are ready to clone the repo via the Downloading the Repo step.
