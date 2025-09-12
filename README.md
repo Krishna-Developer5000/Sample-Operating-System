@@ -1,4 +1,4 @@
-# Sample-Operating-System
+# Sample Operating System
 Operating System for learning about the fundamentals, This includes all the necessary files.
 
 ## 1. Downloading the Repo
