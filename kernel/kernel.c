@@ -2,8 +2,14 @@
 
 void main() {
     char* video_memory = (char*)0xB8000;
-    video_memory[0] = 'K';   // Character to display
-    video_memory[1] = 0x07;  // Light grey on black
+    char* message = "Kernel Loaded!";
+    int i = 0;
+
+    while (message[i] != '\0') {
+        video_memory[i * 2] = message[i];     // Character
+        video_memory[i * 2 + 1] = 0x07;       // Light grey on black
+        i++;
+    }
 
     while (1); // Infinite loop to prevent return
 }
