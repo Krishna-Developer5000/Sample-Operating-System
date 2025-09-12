@@ -1,6 +1,10 @@
 # Sample Operating System
 Operating System for learning about the fundamentals, This includes all the necessary files.
-
+# Prerequisites
+If you dont have these, you can go to the Extra Steps secton.
+1. Visual Studio 2022 with Desktop development with C++ workload installed.
+2. QEMU (x64 or x86 is fine depending on your arcitecture)
+3. Optional: Git, winget
 ## 1. Downloading the Repo
 First, find a green button called 'Code'. You will find a dropdown. Click the button 'Download ZIP', or open Git (if installed) and type this command:
 
@@ -40,7 +44,7 @@ In Visual Studio 2022:
      `run.bat`
 
      h. You should see 'K' in QEMU (if not installed, go to Extra Steps section)
-
+     
 ## Extra Steps
 If you did not install Visual Studio 2022, you can follow this steps:
 1. In your search engine, type 'Visual Studio 2022 Download' on the search bar. (or go to this direct download: https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)
@@ -62,7 +66,7 @@ If you did not install QEMU, follow these steps:
 4. Finish the installation wizard.
 5. Go to Step 2 to run the OS.
 
-WARNING: Do not edit kernel.c or boot.asm as it could corrupt your system. If you want to edit, consider using somebody you know who knows NASM and C, then change it. Otherwise, Understand the code.
+WARNING: Do not edit kernel.c or boot.asm as it could corrupt your system. If you want to edit, understand the code.
 
 This is optional. But if you want to have Git Installed, follow these steps:
 1. In your search engine, type 'Git Download' (or go to this direct link: https://git-scm.com/downloads)
